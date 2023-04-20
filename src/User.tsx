@@ -34,7 +34,7 @@ function User(){
     const [wageError, setWageError] = useState('Ставка должна соответствовать МРОТ!');
 
     useEffect(() =>{
-        if (nameError || birthdayError || phoneError || emailError || daysError || wageError){
+        if (nameError && birthdayError && phoneError && emailError && daysError && wageError){
             setInputValid(false);
         }
         else {
